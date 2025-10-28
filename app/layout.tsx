@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Link from "next/link";
+import DarkModeToggle from "@/components/DarkModeToggle";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,6 +29,19 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <header className='flex justify-between items-center p-4 bg-white border-b border-amber-400'>
+            <div className="flex items-center gap-8">
+                <h1 className='text-3xl font-semibold m-0 text-black'>
+                    <Link href='/'>Hieu</Link>
+                </h1>
+                <nav className='flex gap-6'>
+                    <Link href='/blog' className='text-black hover:text-accent transition-colors underline'>Blog</Link>
+                    <Link href='/preview' className='text-black hover:text-accent transition-colors underline'>Preview</Link>
+                    <Link href='/about' className='text-black hover:text-accent transition-colors underline'>About</Link>
+                </nav>
+            </div>
+            <DarkModeToggle/>
+        </header>
         {children}
       </body>
     </html>
