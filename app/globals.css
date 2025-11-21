@@ -4,11 +4,13 @@
     --background: #ffffff;
     --foreground: #000000;
     --accent: #2563eb;
+    --highlight: #fff9c4;
 
     /* Map cho Tailwind v4 */
     --color-background: var(--background);
     --color-foreground: var(--foreground);
     --color-accent: var(--accent);
+    --color-highlight: var(--highlight);
     --color-primary: #2563eb;
     --color-secondary: #059669;
     --color-success: #7c3aed;
@@ -20,11 +22,13 @@
     --background: #000000;
     --foreground: #ffffff;
     --accent: #3b82f6;
+    --highlight: #fef3c7;
 
     /* Map cho Tailwind v4 */
     --color-background: var(--background);
     --color-foreground: var(--foreground);
     --color-accent: var(--accent);
+    --color-highlight: var(--highlight);
 
 }
 
@@ -38,6 +42,7 @@
     --color-success: var(--color-success);
     --color-warning: var(--color-warning);
     --color-danger: var(--color-danger);
+    --color-highlight: var(--color-highlight);
 }
 
 @media (prefers-color-scheme: dark) {
